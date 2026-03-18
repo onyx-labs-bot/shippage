@@ -55,7 +55,7 @@ export default function Home() {
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required className="flex-1 px-5 py-3.5 rounded-xl bg-gray-900 border border-gray-700 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 text-white placeholder-gray-500" />
               <button type="submit" disabled={loading} className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 font-semibold transition-all disabled:opacity-50 whitespace-nowrap">
-                {loading ? "Joining..." : "Get Access — $29"}
+                {loading ? "Joining..." : "Get Access — $14"}
               </button>
             </form>
           ) : (
@@ -101,7 +101,7 @@ export default function Home() {
       {/* Pricing */}
       <section className="max-w-5xl mx-auto px-6 py-24 text-center">
         <div className="max-w-sm mx-auto p-8 rounded-2xl bg-gradient-to-b from-gray-900 to-gray-900/50 border border-orange-500/30">
-          <div className="text-5xl font-bold mb-2">$29</div>
+          <div className="text-5xl font-bold mb-2">$14</div>
           <p className="text-gray-400 mb-8">one-time · unlimited projects</p>
           <ul className="text-left space-y-3 mb-8">
             {["4 premium templates", "Next.js 14 + TypeScript", "Tailwind CSS", "Dark mode", "Stripe-ready components", "Lifetime updates", "Commercial license"].map((item, i) => (
@@ -133,3 +133,4 @@ export default function Home() {
     </main>
   );
 }
+
